@@ -9,9 +9,17 @@ html {
   padding: 10px;
   width: 250px;
 
+  display: inline-block;
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, .5);
+
+  position: absolute;
+  left: 30%;
+  top: 150px;
+  transform: rotate(5deg) scale(1.1);
+  transition: all 100ms linear;
+  z-index: 3;
 }
 
 .polaroid > img {
@@ -19,7 +27,37 @@ html {
   width: 100%;
 }
 
+figure {
+  position: relative;
+}
+
+figure:first-of-type {
+  transform: rotate(-12deg) scale(1.1);
+left: 20%;
+top: 100px;
+z-index: 2;
+}
+
+figure:last-of-type {
+  transform: rotate(33deg) scale(1.1);
+  left: 40%;
+  top: 100px;
+  z-index: 1;
+}
+
+figcaption {
+  position: absolute;
+  left: 33%;
+  bottom: 10%;
+}
+
 .polaroid > figcaption {
   color: #fff;
   text-shadow: 1px 1px 3px #000;
+}
+
+.polaroid:hover {
+  transform: rotate(0) scale(1.1);
+  box-shadow: 1px 4px 15px rgba(0, 0, 0, 1);
+  z-index: 1000;
 }
