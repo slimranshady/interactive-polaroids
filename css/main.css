@@ -17,8 +17,8 @@ html {
   position: absolute;
   left: 30%;
   top: 150px;
-  transform: rotate(5deg) scale(1.1);
-  transition: all 100ms linear;
+  transform: rotate(5deg) scale(1);
+  transition: all 200ms linear;
   z-index: 3;
 }
 
@@ -32,14 +32,14 @@ figure {
 }
 
 figure:first-of-type {
-  transform: rotate(-12deg) scale(1.1);
-left: 20%;
-top: 100px;
-z-index: 2;
+  transform: rotate(-12deg) scale(1);
+  left: 20%;
+  top: 100px;
+  z-index: 2;
 }
 
 figure:last-of-type {
-  transform: rotate(33deg) scale(1.1);
+  transform: rotate(33deg) scale(1);
   left: 40%;
   top: 100px;
   z-index: 1;
